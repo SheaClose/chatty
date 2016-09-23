@@ -11,7 +11,9 @@ angular.module('chattyApp')
         messageService.addMessage(message).then(function ( response ) {
           $scope.messages = response.data;
         });
+
       }
+      $scope.messages = "";
     };
 
     $scope.awesomeThings = [
